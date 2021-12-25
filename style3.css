@@ -1,0 +1,112 @@
+*
+{
+	padding: 0;
+	margin: 0;
+	
+}
+
+body
+{
+    background-image: url(rose.jpg);
+	background-size: cover;
+    background-position: center;
+    font-family: sans-serif;	
+}
+
+.menu-bar
+{
+	background-color: rgb(179,0,71);
+	text-align: center;
+}
+
+.menu-bar ul
+{
+	display: inline-flex;
+	list-style: none;
+	color: #fff;
+}
+
+.menu-bar ul li
+{
+	width: 120px;
+	margin: 15px;
+}
+
+.menu-bar .fa
+{
+	margin-right: 2px;
+}
+
+.menu-bar ul li a
+{
+	text-decoration: none;
+	color: #fff;
+}
+
+.active , .menu-bar ul li:hover
+{
+	font-weight: bold;
+	font-size: 18;
+}
+
+.sub-menu-1
+{
+	display: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1
+{
+	display: block;
+	background-color: rgb(179,0,71);
+	position: absolute;
+	
+		  
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul
+{
+	display: block;
+	
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li
+{
+	text-align: left;
+	border-bottom: 1px dotted #fff;
+	width: 150px;
+	padding: 10px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child
+{
+	border-bottom: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover
+{
+	color: pink;
+}
+
+.fa-angle-right
+{
+	float: right;
+}
+
+.sub-menu-2
+{
+	display: none;
+}
+
+.hover-me:hover .sub-menu-2
+{
+	display: block;
+	position: absolute;
+	background-color: rgb(179,0,71);
+	margin-left: 140px;
+	margin-top: -40px;
+}
+
+.hover-me:hover .sub-menu-2 ul li a:hover
+{
+	color: pink;
+}
